@@ -117,7 +117,6 @@ RCT_EXPORT_METHOD(show:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)r
             }
         }];
     
-    [BTUIKPostalCodeFormField sharedInstance].placeholder = @"123";
     [BTUIKAppearance sharedInstance].postalCodeFormFieldKeyboardType = UIKeyboardTypeDefault;
     
     [self.reactRoot presentViewController:dropIn animated:YES completion:nil];
