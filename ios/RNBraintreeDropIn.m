@@ -116,6 +116,9 @@ RCT_EXPORT_METHOD(show:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)r
                 }
             }
         }];
+    
+    [BTUIKAppearance sharedInstance].postalCodeFormFieldKeyboardType = UIKeyboardTypeDefault;
+    
     [self.reactRoot presentViewController:dropIn animated:YES completion:nil];
 }
 
